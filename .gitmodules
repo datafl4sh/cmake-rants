@@ -1,0 +1,3 @@
+[submodule "libsticazzi/contrib/sol2"]
+	path = libsticazzi/contrib/sol2
+	url = https://github.com/ThePhD/sol2.git

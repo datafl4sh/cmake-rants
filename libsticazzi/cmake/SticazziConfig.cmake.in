@@ -1,0 +1,10 @@
+@PACKAGE_INIT@
+
+get_filename_component(STICAZZI_CMAKE_DIR "${CMAKE_CURRENT_LIST_DIR}" PATH)
+set(CMAKE_MODULE_PATH "${STICAZZI_CMAKE_DIR}/cmake" ${CMAKE_MODULE_PATH})
+
+include(CMakeFindDependencyMacro)
+find_dependency(Eigen3 REQUIRED)
+
+
+include("${CMAKE_CURRENT_LIST_DIR}/SticazziTargets.cmake")
